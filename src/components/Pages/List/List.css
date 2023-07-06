@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=SF+Compact:wght@400&display=swap");
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+:root {
+    /* fonts */
+    --font-sf-compact: "SF Compact";
+
+    /* font sizes */
+    --font-size-lg: 18px;
+
+    /* Colors */
+    --color-white: #fff;
+    --color-darkslategray: #4b4f4e;
+}
+
+
+* {
+    font-family: var(--font-sf-compact);
+}
+
+.start-phone {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-data-table {
+    color: #58AF9B;
+    text-align: center;
+    font-size: 44.744px;
+    font-style: normal;
+    font-weight: 457;
+    line-height: 44.744px;
+    margin-bottom: 115px;
+}
+
+.table-info {
+    width: 100%;
+    border-collapse: separate;
+    max-width: 1018px;
+    border-spacing: 0;
+}
+
+.header-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 12px;
+}
+
+.start-phone .texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-info {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 457;
+    line-height: 44.744px;
+    border-radius: 16px;
+    text-align: left;
+    background-color: #58AF9B;
+    flex-basis: 327px;
+    padding: 6px 20px;
+}
+
+.header-info:nth-child(2) {
+    text-align: center;
+}
+
+.header-info:last-child {
+    text-align: end;
+}
+
+.body-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E1F8F6;
+    border-radius: 16px;
+    padding: 6px 20px;
+}
+
+.body-info > * {
+    color: #4B4F4E;
+    font-size: 18px;
+    font-weight: 457;
+    line-height: 44.744px;
+    flex-basis: 327px;
+    text-align: left;
+}
+
+.body-info > div:nth-child(2) {
+    text-align: center;
+}
+.body-table{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.body-info > div:last-child {
+    text-align: end;
+}
+
+@media screen and (max-width: 960px) {
+    .user-data-table {
+        margin-bottom: 49px;
+    }
+
+    .table-info {
+        max-width: 570px;
+        padding: 0 39px 0 31px;
+    }
+
+    .header-table {
+        background-color: #58AF9B;
+        border-radius: 16px;
+    }
+}
